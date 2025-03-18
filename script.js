@@ -12,7 +12,7 @@ document.getElementById('questionnaire').addEventListener('submit', function(e) 
 
     data.totalScore = totalScore;
 
-    fetch('https://script.google.com/macros/s/YOUR_GOOGLE_SCRIPT_ID/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwumj2WYS6pDzz9Mph8Bso45iiYYFyZmmoewY3nw_XnshWnu7fnOuwnicx6wKj4gz-h/exec', {
         method: 'POST',
         mode: 'cors',
         headers: {

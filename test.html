@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwestionariusz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .question {
+            margin-top: 20px;
+        }
+        .slider {
+            width: 100%;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kwestionariusz</h1>
+    <form id="questionnaire">
+        <!-- Pytania -->
+        <div class="question">
+            <label for="q1">1. Czy jesteś zadowolony z jakości swojego snu?</label>
+            <input type="range" min="-2" max="2" value="0" class="slider" id="q1" name="q1">
+            <div class="slider-labels">
+                <span>Nie zgadzam się</span>
+                <span>Zgadzam się</span>
+            </div>
+        </div>
+        <!-- Powtórz dla każdego pytania -->
+        <!-- ... -->
+        <div class="question">
+            <label for="q15">15. Czy czujesz się wspierany przez swoich bliskich?</label>
+            <input type="range" min="-2" max="2" value="0" class="slider" id="q15" name="q15">
+            <div class="slider-labels">
+                <span>Nie zgadzam się</span>
+                <span>Zgadzam się</span>
+            </div>
+        </div>
+        <button type="submit">Wyślij</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
